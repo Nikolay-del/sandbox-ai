@@ -49,10 +49,8 @@
   }
 }
 
-.promo__link {
+.promo__button {
   position: relative;
-  // animation: animationApperance 0.6s ease-in;
-  // animation-delay: 0.6s;
   padding: 1.3rem 2.1rem;
   font-size: 2.3rem;
   font-weight: 600;
@@ -62,10 +60,11 @@
   background: $colorButtonMain;
   border-radius: 0.6rem;
   box-shadow: 0 6px 0 0 $colorButtonSecond;
-  transition: 0.3s transform ease-in;
+  border: 0;
+  cursor: pointer;
 
   &:hover {
-    animation: pulse 3s infinite;
+    animation: pulse 3s infinite ease-out;
   }
 }
 
@@ -78,8 +77,10 @@
     height: 63.1rem;
     background: url("../img/promo-people-bg-1.png");
     transition: transform 0.2s;
-    // transform: translateY(30%) rotate(8.5deg);
-    // animation: animationPeopleLeft 1s linear;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-people-bg-1@2x.png");
+    }
   }
 
   &-2 {
@@ -90,8 +91,10 @@
     bottom: -35%;
     background: url("../img/promo-people-bg-2.png");
     transition: transform 0.2s;
-    // transform: translateY(30%) rotate(-6.5deg);
-    // animation: animationPeopleRight 1s linear;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-people-bg-2@2x.png");
+    }
   }
 }
 
@@ -157,17 +160,3 @@
       0 0 0 4px rgba($colorButtonSecond, 0.1);
   }
 }
-
-// @keyframes pulse {
-//   0% {
-//     box-shadow: 0 0 0 0 rgba($colorButtonSecond, 0.4), 0 0 0 2px rgba($colorButtonSecond, 0.2), 0 0 0 4px rgba($colorButtonSecond, 0.1);
-//   }
-
-//   50% {
-//     box-shadow: 0 0 0 8px rgba($colorButtonSecond, 0.8), 0 0 0 15px rgba($colorButtonSecond, 0.6), 0 0 0 20px rgba($colorButtonSecond, 0.3);
-//   }
-
-//   100% {
-//     box-shadow: 0 0 0 0 rgba($colorButtonSecond, 0.4), 0 0 0 2px rgba($colorButtonSecond, 0.2), 0 0 0 4px rgba($colorButtonSecond, 0.1);
-//   }
-// }

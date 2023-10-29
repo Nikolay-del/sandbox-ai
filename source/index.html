@@ -6,13 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.min.css">
-  <!-- <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
+  <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
   <script src="https://unpkg.com/crypto-js@latest/crypto-js.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.js" type="application/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.js"
+    type="application/javascript"></script>
   <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
 
   <script src="./js/settings.js"></script>
-  <script src="./js/webchunk.js"></script> -->
+  <script src="./js/webchunk.js"></script>
   <title>SandboxAI</title>
 </head>
 
@@ -28,12 +29,13 @@
       <div class="header__main-nav main-nav">
         <nav class="main-nav__container">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="#" class="main-nav__link">About us</a></li>
-            <li class="main-nav__item"><a href="#" class="main-nav__link">Whitepaper</a></li>
-            <li class="main-nav__item"><a href="#" class="main-nav__link">FAQ</a></li>
-            <li class="main-nav__item"><a href="#" class="main-nav__link">Team</a></li>
+            <li class="main-nav__item"><a href="about-us.html" class="main-nav__link">About us</a></li>
+            <li class="main-nav__item"><a href="https://sandboxai.gitbook.io/the-sandboxai/" target="_blank"
+                class="main-nav__link">Whitepaper</a></li>
+            <li class="main-nav__item"><a href="faq.html" class="main-nav__link">FAQ</a></li>
+            <li class="main-nav__item"><a href="team.html" class="main-nav__link">Team</a></li>
           </ul>
-          <a href="#" class="main-nav__button connectButton">Connect wallet</a>
+          <button type="button" class="main-nav__button connectButton">Connect wallet</button>
         </nav>
         <button type="button" class="main-nav__button-open" aria-label="Open menu">
           <span></span>
@@ -47,10 +49,9 @@
     <section class="promo">
       <div class="promo__container container">
         <h1 class="promo__heading">Join the <span>SandboxAI</span></h1>
-        <a href="#" class="promo__link connectButton">Generate now</a>
+        <button type="button" class="promo__button connectButton">Generate now</button>
         <div class="promo__people-bg-1 parallax" data-parallax="3"></div>
         <div class="promo__people-bg-2 parallax" data-parallax="1"></div>
-
       </div>
     </section>
     <section class="product-description">
@@ -115,98 +116,114 @@
         <ul class="featured-by__list">
           <li class="featured-by__item">
             <picture>
-              <source srcset="img/logo-1.webp 1x, img/logo-1@2x.webp 2x" type="image/webp">
-              <img src="img/logo-1.png" alt="Logo Blockfolio" srcset="img/logo-1@2x.png" width="" height="">
+              <source srcset="img/partners/logo-1.webp 1x, img/partners/logo-1@2x.webp 2x" type="image/webp">
+              <img src="img/partners/logo-1.png" alt="Logo Blockfolio" srcset="img/partners/logo-1@2x.png" width="166"
+                height="39">
             </picture>
           </li>
           <li class="featured-by__item">
             <picture>
-              <source srcset="img/logo-2.webp 1x, img/logo-2@2x.webp 2x" type="image/webp">
-              <img src="img/logo-2.png" alt="Logo bts heights" srcset="img/logo-2@2x.png" width="" height="">
+              <source srcset="img/partners/logo-2.webp 1x, img/partners/logo-2@2x.webp 2x" type="image/webp">
+              <img src="img/partners/logo-2.png" alt="Logo bts heights" srcset="img/partners/logo-2@2x.png" width="166"
+                height="38">
             </picture>
           </li>
           <li class="featured-by__item">
             <picture>
-              <source srcset="img/logo-3.webp 1x, img/logo-3@2x.webp 2x" type="image/webp">
-              <img src="img/logo-3.png" alt="Logo ccn" srcset="img/logo-3@2x.png" width="" height="">
+              <source srcset="img/partners/logo-3.webp 1x, img/partners/logo-3@2x.webp 2x" type="image/webp">
+              <img src="img/partners/logo-3.png" alt="Logo ccn" srcset="img/partners/logo-3@2x.png" width="166"
+                height="36">
             </picture>
           </li>
           <li class="featured-by__item">
             <picture>
-              <source srcset="img/logo-4.webp 1x, img/logo-4@2x.webp 2x" type="image/webp">
-              <img src="img/logo-4.png" alt="Logo CoinLore" srcset="img/logo-4@2x.png" width="" height="">
+              <source srcset="img/partners/logo-4.webp 1x, img/partners/logo-4@2x.webp 2x" type="image/webp">
+              <img src="img/partners/logo-4.png" alt="Logo CoinLore" srcset="img/partners/logo-4@2x.png" width="165"
+                height="30">
             </picture>
           </li>
           <li class="featured-by__item">
             <picture>
-              <source srcset="img/logo-5.webp 1x, img/logo-5@2x.webp 2x" type="image/webp">
-              <img src="img/logo-5.png" alt="Logo coincodex" srcset="img/logo-5@2x.png" width="" height="">
+              <source srcset="img/partners/logo-5.webp 1x, img/partners/logo-5@2x.webp 2x" type="image/webp">
+              <img src="img/partners/logo-5.png" alt="Logo coincodex" srcset="img/partners/logo-5@2x.png" width="165"
+                height="32">
             </picture>
           </li>
           <li class="featured-by__item">
             <picture>
-              <source srcset="img/logo-6.webp 1x, img/logo-6@2x.webp 2x" type="image/webp">
-              <img src="img/logo-6.png" alt="Logo coinedict" srcset="img/logo-6@2x.png" width="" height="">
+              <source srcset="img/partners/logo-6.webp 1x, img/partners/logo-6@2x.webp 2x" type="image/webp">
+              <img src="img/partners/logo-6.png" alt="Logo coinedict" srcset="img/partners/logo-6@2x.png" width="166"
+                height="32">
             </picture>
           </li>
           <li class="featured-by__item">
             <picture>
-              <source srcset="img/logo-7.webp 1x, img/logo-7@2x.webp 2x" type="image/webp">
-              <img src="img/logo-7.png" alt="Logo CoinGecko" srcset="img/logo-7@2x.png" width="" height="">
+              <source srcset="img/partners/logo-7.webp 1x, img/partners/logo-7@2x.webp 2x" type="image/webp">
+              <img src="img/partners/logo-7.png" alt="Logo CoinGecko" srcset="img/partners/logo-7@2x.png" width="166"
+                height="29">
             </picture>
           </li>
           <li class="featured-by__item">
             <picture>
-              <source srcset="img/logo-8.webp 1x, img/logo-8@2x.webp 2x" type="image/webp">
-              <img src="img/logo-8.png" alt="Logo CoinMarketCap" srcset="img/logo-8@2x.png" width="" height="">
+              <source srcset="img/partners/logo-8.webp 1x, img/partners/logo-8@2x.webp 2x" type="image/webp">
+              <img src="img/partners/logo-8.png" alt="Logo CoinMarketCap" srcset="img/partners/logo-8@2x.png"
+                width="166" height="30">
             </picture>
           </li>
           <li class="featured-by__item">
             <picture>
-              <source srcset="img/logo-9.webp 1x, img/logo-9@2x.webp 2x" type="image/webp">
-              <img src="img/logo-9.png" alt="Logo Coinpaprika" srcset="img/logo-9@2x.png" width="" height="">
+              <source srcset="img/partners/logo-9.webp 1x, img/partners/logo-9@2x.webp 2x" type="image/webp">
+              <img src="img/partners/logo-9.png" alt="Logo Coinpaprika" srcset="img/partners/logo-9@2x.png" width="166"
+                height="25">
             </picture>
           </li>
           <li class="featured-by__item">
             <picture>
-              <source srcset="img/logo-10.webp 1x, img/logo-10@2x.webp 2x" type="image/webp">
-              <img src="img/logo-10.png" alt="Logo CoinScribble" srcset="img/logo-10@2x.png" width="" height="">
+              <source srcset="img/partners/logo-10.webp 1x, img/partners/logo-10@2x.webp 2x" type="image/webp">
+              <img src="img/partners/logo-10.png" alt="Logo CoinScribble" srcset="img/partners/logo-10@2x.png"
+                width="166" height="35">
             </picture>
           </li>
           <li class="featured-by__item">
             <picture>
-              <source srcset="img/logo-11.webp 1x, img/logo-11@2x.webp 2x" type="image/webp">
-              <img src="img/logo-11.png" alt="Logo Coinspeaker" srcset="img/logo-11@2x.png" width="" height="">
+              <source srcset="img/partners/logo-11.webp 1x, img/partners/logo-11@2x.webp 2x" type="image/webp">
+              <img src="img/partners/logo-11.png" alt="Logo Coinspeaker" srcset="img/partners/logo-11@2x.png"
+                width="166" height="30">
             </picture>
           </li>
           <li class="featured-by__item">
             <picture>
-              <source srcset="img/logo-12.webp 1x, img/logo-12@2x.webp 2x" type="image/webp">
-              <img src="img/logo-12.png" alt="Logo Cryptocurrencies" srcset="img/logo-12@2x.png" width="" height="">
+              <source srcset="img/partners/logo-12.webp 1x, img/partners/logo-12@2x.webp 2x" type="image/webp">
+              <img src="img/partners/logo-12.png" alt="Logo Cryptocurrencies" srcset="img/partners/logo-12@2x.png"
+                width="166" height="37">
             </picture>
           </li>
           <li class="featured-by__item">
             <picture>
-              <source srcset="img/logo-13.webp 1x, img/logo-13@2x.webp 2x" type="image/webp">
-              <img src="img/logo-13.png" alt="Logo Cryptoslate" srcset="img/logo-13@2x.png" width="" height="">
+              <source srcset="img/partners/logo-13.webp 1x, img/partners/logo-13@2x.webp 2x" type="image/webp">
+              <img src="img/partners/logo-13.png" alt="Logo Cryptoslate" srcset="img/partners/logo-13@2x.png"
+                width="166" height="35">
             </picture>
           </li>
           <li class="featured-by__item">
             <picture>
-              <source srcset="img/logo-14.webp 1x, img/logo-14@2x.webp 2x" type="image/webp">
-              <img src="img/logo-14.png" alt="Logo Etherscan" srcset="img/logo-14@2x.png" width="" height="">
+              <source srcset="img/partners/logo-14.webp 1x, img/partners/logo-14@2x.webp 2x" type="image/webp">
+              <img src="img/partners/logo-14.png" alt="Logo Etherscan" srcset="img/partners/logo-14@2x.png" width="166"
+                height="37">
             </picture>
           </li>
           <li class="featured-by__item">
             <picture>
-              <source srcset="img/logo-15.webp 1x, img/logo-15@2x.webp 2x" type="image/webp">
-              <img src="img/logo-15.png" alt="Logo Investing.com" srcset="img/logo-15@2x.png" width="" height="">
+              <source srcset="img/partners/logo-15.webp 1x, img/partners/logo-15@2x.webp 2x" type="image/webp">
+              <img src="img/partners/logo-15.png" alt="Logo Investing.com" srcset="img/partners/logo-15@2x.png"
+                width="166" height="33">
             </picture>
           </li>
           <li class="featured-by__item">
             <picture>
-              <source srcset="img/logo-16.webp 1x, img/logo-16@2x.webp 2x" type="image/webp">
-              <img src="img/logo-16.png" alt="Logo Publish0x" srcset="img/logo-16@2x.png" width="" height="">
+              <source srcset="img/partners/logo-16.webp 1x, img/partners/logo-16@2x.webp 2x" type="image/webp">
+              <img src="img/partners/logo-16.png" alt="Logo Publish0x" srcset="img/partners/logo-16@2x.png" width="166"
+                height="32">
             </picture>
           </li>
         </ul>
@@ -219,7 +236,7 @@
           <p class="playground__text">It's not just software. It's a whole new way to explore, test and develop your
             ideas
             into life, or rather into the metaverse!</p>
-          <button type="button" class="playground__button connectButton">Connect wallet</a>
+          <button type="button" class="playground__button connectButton">Connect wallet</button>
         </div>
         <div class="playground__photo"></div>
       </div>
@@ -234,10 +251,11 @@
         </picture>
       </a>
       <ul class="footer__list">
-        <li class="footer__item"><a href="#" class="footer__link">About us</a></li>
-        <li class="footer__item"><a href="#" class="footer__link">Whitepaper</a></li>
-        <li class="footer__item"><a href="#" class="footer__link">FAQ</a></li>
-        <li class="footer__item"><a href="#" class="footer__link">Team</a></li>
+        <li class="footer__item"><a href="about-us.html" class="footer__link">About us</a></li>
+        <li class="footer__item"><a href="https://sandboxai.gitbook.io/the-sandboxai/" target="_blank"
+            class="footer__link">Whitepaper</a></li>
+        <li class="footer__item"><a href="faq.html" class="footer__link">FAQ</a></li>
+        <li class="footer__item"><a href="team.html" class="footer__link">Team</a></li>
       </ul>
       <div class="footer__bottom">
         <p class="footer__copyright">Copyright 2017-2023</p>

@@ -10,3 +10,15 @@ function parallax(event) {
     shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
   });
 }
+
+// Accordion
+  const accordionItems = document.querySelectorAll('.faq__accordion');
+
+  accordionItems.forEach(item => {
+    const button = item.querySelector('.faq__accordion-button');
+    const content = item.querySelector('.faq__accordion-content');
+
+    button.addEventListener('click', () => {
+      item.classList.toggle('faq__accordion--active');
+    });
+  });

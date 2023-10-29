@@ -23,6 +23,7 @@
 .main-nav__item {
   display: flex;
   align-items: center;
+  cursor: pointer !important;
 
   &:not(:last-child)::after {
     content: "";
@@ -41,6 +42,7 @@
   line-height: 1;
   font-weight: 400;
   text-decoration: none;
+  cursor: pointer;
   color: inherit;
   transition: 0.3s transform ease-in;
 
@@ -58,6 +60,8 @@
   color: inherit;
   text-decoration: none;
   background: $colorButtonMain;
+  border: 0;
+  cursor: pointer;
   border-radius: 0.6rem;
   box-shadow: 0 6px 0 0 $colorButtonSecond;
   transition: 0.3s transform ease-in;
