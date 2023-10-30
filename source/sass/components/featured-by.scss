@@ -16,6 +16,18 @@
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   gap: 2rem 4rem;
+
+  @media screen and (max-width: 1440px) {
+    gap: 2rem 3rem;
+  }
+
+  @media screen and (max-width: 1340px) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 .featured-by__item img {

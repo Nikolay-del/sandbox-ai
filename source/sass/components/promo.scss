@@ -21,11 +21,13 @@
 }
 
 .promo__container {
-  padding: 14rem 0 17rem;
+  // padding: 14rem 0 17rem;
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 .promo__heading {
@@ -38,7 +40,6 @@
 
   span {
     animation: animationApperance 0.6s ease-in forwards;
-    // animation-delay: 0.3s;
     transform: scale(0);
     margin: -1.6rem 0 0;
     display: block;
@@ -46,6 +47,15 @@
     font-size: 8rem;
     font-weight: 800;
     color: $colorButtonMain;
+
+    @media screen and (max-width: 1110px) {
+      font-size: 7rem;
+    }
+  }
+
+  @media screen and (max-width: 1110px) {
+    margin-bottom: 4rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -66,35 +76,51 @@
   &:hover {
     animation: pulse 3s infinite ease-out;
   }
+
+  @media screen and (max-width: 1110px) {
+    font-size: 2rem;
+  }
 }
 
 .promo__people-bg {
-  &-1 {
-    position: absolute;
+  position: absolute;
+  width: 40vh;
+  height: 110vh;
+  bottom: -35%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: transform 0.2s;
+
+  &--1 {
     left: 0;
-    bottom: -35%;
-    width: 21.81rem;
-    height: 63.1rem;
-    background: url("../img/promo-people-bg-1.png");
-    transition: transform 0.2s;
+    background-image: url("../img/promo-people-bg-1.png");
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/promo-people-bg-1@2x.png");
     }
+
+    @media screen and (max-width: 1280px) {
+      left: -10vh;
+    }
   }
 
-  &-2 {
-    position: absolute;
-    width: 21.81rem;
-    height: 62.4rem;
+  &--2 {
     right: 0;
-    bottom: -35%;
-    background: url("../img/promo-people-bg-2.png");
-    transition: transform 0.2s;
+    background-image: url("../img/promo-people-bg-2.png");
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/promo-people-bg-2@2x.png");
     }
+
+    @media screen and (max-width: 1280px) {
+      right: -10vh;
+    }
+  }
+
+  @media screen and (max-width: 1110px) {
+    width: 35vh;
+    height: 100vh;
+    bottom: -30%;
   }
 }
 

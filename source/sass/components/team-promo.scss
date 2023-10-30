@@ -6,6 +6,16 @@
   display: grid;
   grid-template-columns: 40% 1fr;
   gap: 1.5rem;
+
+  @media screen and (max-width: 1350px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
 }
 
 .team-promo__content {
@@ -22,11 +32,27 @@
 }
 
 .team-promo__text {
-  margin: 0 4.2rem 3rem;
+  margin: 0 3.3rem 3rem;
   text-align: center;
   font-size: 1.4rem;
   color: #a8a6a6;
   font-weight: 500;
+
+  @media screen and (max-width: 1440px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  @media screen and (max-width: 1350px) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  @media screen and (max-width: 1350px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
 }
 
 .team-promo__button {
@@ -53,4 +79,8 @@
   height: 50rem;
   background: url("../img/team-promo-bg.png") no-repeat center;
   background-size: contain;
+
+  @media screen and (max-width: 1200px) {
+    height: 40rem;
+  }
 }

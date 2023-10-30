@@ -5,6 +5,11 @@
 .playground__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
 }
 
 .playground__content {
@@ -12,6 +17,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 1250px) {
+    font-size: 2rem;
+  }
 }
 
 .playground__heading {
@@ -19,6 +28,11 @@
   font-size: 2.5rem;
   font-weight: 600;
   text-align: center;
+
+  @media screen and (max-width: 1250px) {
+    margin: 0 0 1.5rem;
+    font-size: 2rem;
+  }
 }
 
 .playground__text {
@@ -27,6 +41,16 @@
   font-size: 1.4rem;
   color: #a8a6a6;
   font-weight: 500;
+
+  @media screen and (max-width: 1250px) {
+    font-size: 1.2rem;
+    margin: 0 2rem 3rem;
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin-right: 5rem;
+    margin-left: 5rem;
+  }
 }
 
 .playground__button {
@@ -46,15 +70,23 @@
   &:hover {
     transform: scale(0.95);
   }
+
+  @media screen and (max-width: 1250px) {
+    font-size: 1.4rem;
+  }
 }
 
 .playground__photo {
   border-radius: 3rem;
-  height: 30rem;
-  background: url("../img/playground-bg.jpg");
+  min-height: 30rem;
+  background: url("../img/playground-bg.jpg") no-repeat;
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/playground-bg@2x.jpg");
+  }
+
+  @media screen and (max-width: 1250px) {
+    height: 25rem;
   }
 }
