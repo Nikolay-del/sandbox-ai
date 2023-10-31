@@ -28,6 +28,10 @@
   @media screen and (max-width: 1024px) {
     grid-template-columns: repeat(5, 1fr);
   }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .featured-by__item img {
