@@ -11,25 +11,38 @@
     gap: 1.5%;
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1440px) {
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem 1rem;
+  }
+
+  @media screen and (max-width: 520px) {
+    grid-template-columns: 1fr;
   }
 }
 
 .advantages__img {
   display: block;
+  width: 100%;
   border-radius: 2.5rem;
   margin: 0 0 1.3rem;
+
+  @media screen and (max-width: 768px) {
+    border-radius: 2rem;
+  }
 }
 
 .advantages__name {
   margin: 0 0 1rem;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-weight: 600;
 
   @media screen and (max-width: 1200px) {
     font-size: 1.5rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.3rem;
   }
 }
 
@@ -45,9 +58,13 @@
   margin: 0 0 0.3rem;
   font-size: 1.4rem;
   color: #a8a6a6;
-  font-weight: 300;
+  font-weight: 400;
 
   @media screen and (max-width: 1200px) {
     font-size: 1.2rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.1rem;
   }
 }

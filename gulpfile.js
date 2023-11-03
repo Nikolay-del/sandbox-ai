@@ -171,8 +171,11 @@ export const build = gulp.series(
         optimizeJS,
         sprite,
         createWebp
-    )
-);
+    ),
+    gulp.series(
+      server,
+      watcher
+  ));
 
 // Default
 
@@ -188,11 +191,8 @@ export default gulp.series(
         svg,
         sprite,
         createWebp
-    ),
-    gulp.series(
-        server,
-        watcher
-    ));
+    )
+);
 
 export const layout = gulp.series(
     gulp.parallel(

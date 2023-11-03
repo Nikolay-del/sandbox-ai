@@ -7,6 +7,10 @@
   @include heading-page;
 
   margin: 0 0 2rem;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .about-us__description {
@@ -16,11 +20,25 @@
   font-size: 1.8rem;
   line-height: 1.5;
   color: #a8a6a6;
-  font-weight: 500;
+  font-weight: 400;
 
   @media screen and (max-width: 1280px) {
     width: 80%;
     font-size: 1.5rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    margin-bottom: 3.5rem;
+    font-size: 1.2rem;
+  }
+
+  @media screen and (max-width: 520px) {
+    width: auto;
+  }
+
+  @media screen and (max-width: 425px) {
+    margin-bottom: 2.5rem;
   }
 }
 
@@ -32,6 +50,18 @@
 
   @media screen and (max-width: 1280px) {
     width: 100%;
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 20rem;
+    margin-bottom: 3.5rem;
+    border-radius: 3rem;
+    object-fit: cover;
+  }
+
+  @media screen and (max-width: 425px) {
+    height: 15rem;
+    margin-bottom: 2.5rem;
   }
 }
 
@@ -48,12 +78,21 @@
   @media screen and (max-width: 1280px) {
     font-size: 1.5rem;
   }
+
+  @media screen and (max-width: 520px) {
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
 }
 
 .about-us__text-wrapper {
   position: relative;
   display: grid;
   gap: 1rem;
+
+  @media screen and (max-width: 520px) {
+    gap: 1.5rem;
+  }
 }
 
 .about-us__paragraph {
@@ -72,6 +111,11 @@
   @media screen and (max-width: 1280px) {
     font-size: 1.3rem;
   }
+
+  @media screen and (max-width: 600px) {
+    width: 90%;
+    font-size: 1.2rem;
+  }
 }
 
 .about-us__people-bg {
@@ -80,6 +124,7 @@
   height: 32.56rem;
   background-size: contain;
   background-repeat: no-repeat;
+  z-index: -1;
 
   &--1 {
     position: absolute;
@@ -87,14 +132,15 @@
     bottom: 0;
     width: 12.31rem;
     height: 32.56rem;
-    background-image: url("../img/about-people-bg-1.png");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/about-people-bg-1@2x.png");
-    }
 
     @media screen and (max-width: 1280px) {
       left: -10%;
+    }
+
+    @media screen and (max-width: 710px) {
+      width: 11rem;
+      height: 25rem;
+      left: -18%;
     }
   }
 
@@ -104,14 +150,67 @@
     bottom: 0;
     width: 13.88rem;
     height: 32.43rem;
-    background-image: url("../img/about-people-bg-2.png");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/about-people-bg-2@2x.png");
-    }
 
     @media screen and (max-width: 1280px) {
       right: -10%;
     }
+
+    @media screen and (max-width: 710px) {
+      width: 11rem;
+      height: 25rem;
+      right: -18%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+}
+
+.webp .about-us__people-bg--1 {
+  background-image: url("../img/about-people-bg-1.webp");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/about-people-bg-1@2x.webp");
+  }
+}
+
+.no-webp .about-us__people-bg--1 {
+  background-image: url("../img/about-people-bg-1.png");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/about-people-bg-1@2x.png");
+  }
+}
+
+.no-js .about-us__people-bg--1 {
+  background-image: url("../img/about-people-bg-1.png");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/about-people-bg-1@2x.png");
+  }
+}
+
+.webp .about-us__people-bg--2 {
+  background-image: url("../img/about-people-bg-2.webp");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/about-people-bg-2@2x.webp");
+  }
+}
+
+.no-webp .about-us__people-bg--2 {
+  background-image: url("../img/about-people-bg-2.png");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/about-people-bg-2@2x.png");
+  }
+}
+
+.no-js .about-us__people-bg--2 {
+  background-image: url("../img/about-people-bg-2.png");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/about-people-bg-2@2x.png");
   }
 }

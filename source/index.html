@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.min.css">
-  <!-- <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
+  <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
   <script src="https://unpkg.com/crypto-js@latest/crypto-js.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.js"
     type="application/javascript"></script>
   <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
-
   <script src="./js/settings.js"></script>
-  <script src="./js/webchunk.js"></script> -->
+  <script src="./js/webchunk.js"></script>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <title>SandboxAI</title>
 </head>
 
@@ -26,7 +29,7 @@
           <img src="img/logo.png" srcset="img/logo@2x.png" alt="Logo" width="214" height="92">
         </picture>
       </a>
-      <div class="header__main-nav main-nav">
+      <div class="header__main-nav main-nav main-nav--no-js">
         <nav class="main-nav__container">
           <ul class="main-nav__list">
             <li class="main-nav__item"><a href="about-us.html" class="main-nav__link">About us</a></li>
@@ -48,10 +51,18 @@
   <main>
     <section class="promo">
       <div class="promo__container container">
-        <h1 class="promo__heading">Join the <span>SandboxAI</span></h1>
-        <button type="button" class="promo__button connectButton">Generate now</button>
-        <div class="promo__people-bg promo__people-bg--1 parallax" data-parallax="3"></div>
-        <div class="promo__people-bg promo__people-bg--2 parallax" data-parallax="1"></div>
+        <div class="promo__content">
+          <h1 class="promo__heading">Join the <span>SandboxAI</span></h1>
+          <button type="button" class="promo__button connectButton">Generate now</button>
+        </div>
+        <div class="promo__people-bg promo__people-bg--1 parallax" data-parallax="3">
+          <div class="no-webp"></div>
+          <div class="webp"></div>
+        </div>
+        <div class="promo__people-bg promo__people-bg--2 parallax" data-parallax="1">
+          <div class="no-webp"></div>
+          <div class="webp"></div>
+        </div>
       </div>
     </section>
     <section class="product-description">
@@ -70,7 +81,7 @@
           <picture>
             <source srcset="img/advantage-1.webp 1x, img/advantage-1@2x.webp 2x" type="image/webp">
             <img class="advantages__img" src="img/advantage-1.jpg" srcset="img/advantage-1@2x.jpg" alt="" width="556"
-              height="430">
+              height="296">
           </picture>
           <h3 class="advantages__name">Lightness and simplicity!</h3>
           <ul class="advantages__list">
@@ -83,7 +94,7 @@
           <picture>
             <source srcset="img/advantage-2.webp 1x, img/advantage-2@2x.webp 2x" type="image/webp">
             <img class="advantages__img" src="img/advantage-2.jpg" srcset="img/advantage-2@2x.jpg" alt="" width="556"
-              height="430">
+              height="296">
           </picture>
           <h3 class="advantages__name">Just Generate!</h3>
           <ul class="advantages__list">
@@ -96,7 +107,7 @@
           <picture>
             <source srcset="img/advantage-3.webp 1x, img/advantage-3@2x.webp 2x" type="image/webp">
             <img class="advantages__img" src="img/advantage-3.jpg" srcset="img/advantage-3@2x.jpg" alt="" width="556"
-              height="430">
+              height="296">
           </picture>
           <h3 class="advantages__name">Lightness and simplicity!</h3>
           <ul class="advantages__list">
@@ -244,7 +255,7 @@
   </main>
   <footer class="footer">
     <div class="footer__container container">
-      <a class="footer__logo logo">
+      <a class="footer__logo logo" href="#" id="scrollToTop">
         <picture>
           <source srcset="img/logo.webp 1x, img/logo@2x.webp 2x" type="image/webp">
           <img src="img/logo.png" srcset="img/logo@2x.png" alt="Logo" width="150" height="64">
@@ -258,7 +269,7 @@
         <li class="footer__item"><a href="team.html" class="footer__link">Team</a></li>
       </ul>
       <div class="footer__bottom">
-        <p class="footer__copyright">Copyright 2017-2023</p>
+        <p class="footer__copyright">Copyright 2022-2023</p>
       </div>
     </div>
   </footer>

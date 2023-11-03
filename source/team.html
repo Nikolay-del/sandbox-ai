@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.min.css">
-  <!-- <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
+  <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
   <script src="https://unpkg.com/crypto-js@latest/crypto-js.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.js"
     type="application/javascript"></script>
   <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
 
   <script src="./js/settings.js"></script>
-  <script src="./js/webchunk.js"></script> -->
+  <script src="./js/webchunk.js"></script>
   <title>SandboxAI</title>
 </head>
 
@@ -48,11 +48,12 @@
   <main>
     <section class="promo">
       <div class="promo__container container">
-        <h2 class="promo__heading">Join the <span>SandboxAI</span></h2>
-        <button type="button" class="promo__button connectButton">Generate now</button>
-
-        <div class="promo__people-bg-1 parallax" data-parallax="3"></div>
-        <div class="promo__people-bg-2 parallax" data-parallax="1"></div>
+        <div class="promo__content">
+          <h2 class="promo__heading">Join the <span>SandboxAI</span></h2>
+          <button type="button" class="promo__button connectButton">Generate now</button>
+        </div>
+        <div class="promo__people-bg promo__people-bg--1 parallax" data-parallax="3"></div>
+        <div class="promo__people-bg promo__people-bg--2 parallax" data-parallax="1"></div>
       </div>
     </section>
     <section class="team">
@@ -86,7 +87,7 @@
               </picture>
             </div>
           </div>
-          <div class="team__wrapper-middle">
+          <div class="team__wrapper-bottom">
             <div class="team__people">
               <p class="team__people-description">
                 Emma Stone
@@ -121,8 +122,6 @@
                   alt="advertising manager" class="team__people-img" width="363" height="481">
               </picture>
             </div>
-          </div>
-          <div class="team__wrapper-bottom">
             <div class="team__people">
               <p class="team__people-description">
                 Mira Sharma
@@ -183,10 +182,9 @@
       <div class="team-promo__container container">
         <div class="team-promo__content">
           <picture>
-            <source srcset="img/team-promo-logo.webp 1x, img/team-promo-logo@2x.webp 2x"
-              type="image/webp">
-            <img class="team-promo__logo" src="img/team-promo-logo.png" srcset="img/team-promo-logo@2x.png" alt="Logo" width="476"
-              height="194">
+            <source srcset="img/team-promo-logo.webp 1x, img/team-promo-logo@2x.webp 2x" type="image/webp">
+            <img class="team-promo__logo" src="img/team-promo-logo.png" srcset="img/team-promo-logo@2x.png" alt="Logo"
+              width="476" height="194">
           </picture>
           <p class="team-promo__text">
             Try using our AI at least once, and you will notice that working without it will no longer be as pleasant
@@ -217,13 +215,14 @@
         <li class="footer__item"><a href="https://sandboxai.gitbook.io/the-sandboxai/" target="_blank"
             class="footer__link">Whitepaper</a></li>
         <li class="footer__item"><a href="faq.html" class="footer__link">FAQ</a></li>
-        <li class="footer__item"><a class="footer__link">Team</a></li>
+        <li class="footer__item"><a class="footer__link" href="#" id="scrollToTop">Team</a></li>
       </ul>
       <div class="footer__bottom">
-        <p class="footer__copyright">Copyright 2017-2023</p>
+        <p class="footer__copyright">Copyright 2022-2023</p>
       </div>
     </div>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

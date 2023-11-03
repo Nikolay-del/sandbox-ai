@@ -20,6 +20,14 @@
     height: 7rem;
     background: url("../img/decor-heading-faq.svg") no-repeat center;
     background-size: contain;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding-bottom: 3.5rem;
   }
 }
 
@@ -40,10 +48,21 @@
     max-height: 20rem;
     transition: all 0.2s linear;
     will-change: opacity, max-height, padding;
+
+    @media screen and (max-width: 768px) {
+      max-height: 25rem;
+    }
   }
 
   @media screen and (max-width: 1300px) {
     width: 90%;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    border: 3px solid #ffffff;
+    padding: 0 1.5rem;
+    border-radius: 2rem;
   }
 }
 
@@ -96,6 +115,33 @@
   @media screen and (max-width: 1200px) {
     font-size: 1.7rem;
   }
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+    &::before {
+      width: 1.5rem;
+      height: 0.2rem;
+    }
+
+    &::after {
+      width: 0.2rem;
+      height: 1.5rem;
+      left: calc(1.5rem / 2);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.3rem;
+  }
+
+  @media screen and (max-width: 520px) {
+    padding-left: 2.5rem;
+    padding-right: 0;
+    text-align: left;
+  }
 }
 
 .faq__accordion-content {
@@ -114,5 +160,13 @@
 
   @media screen and (max-width: 1200px) {
     font-size: 1.4rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.2rem;
+  }
+
+  @media screen and (max-width: 520px) {
+    font-size: 1.1rem;
   }
 }

@@ -7,6 +7,10 @@
   font-size: 2.5rem;
   font-weight: 600;
   text-align: center;
+
+  @media screen and (max-width: 520px) {
+    font-size: 2.2rem;
+  }
 }
 
 .featured-by__list {
@@ -31,6 +35,10 @@
 
   @media screen and (max-width: 768px) {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media screen and (max-width: 520px) {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
